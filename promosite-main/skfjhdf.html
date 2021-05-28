@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .pictures_of_events {
+border: 5px solid red;
+width: 200px;
+height: 200px;
+position: relative;
+}
+
+.pictures_of_events:hover img {
+filter: blur(3px);
+}
+
+.pictures_of_events:hover p {
+opacity: 1;
+}
+
+.text_of_events {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+color: #000;
+display: flex;
+justify-content: center;
+align-items: center;
+opacity: 0;
+transition: opacity .3s;
+}
+
+.img_of_events {
+width: 100%;
+height: 100%;
+filter: blur(0);
+transition: filter .3s;
+object-fit: cover;
+}
+
+
+
+    </style>
+  </head>
+  <body>
+    <div>
+    <img src="img/0.png" />
+    <p>
+    Something
+    </p>
+    </div>
+
+  </body>
+</html>
